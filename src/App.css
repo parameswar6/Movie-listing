@@ -1,0 +1,89 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background: linear-gradient(to right, #eef2f3, #f9f9f9);
+}
+
+/* App container */
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+/* Search box */
+input {
+  display: block;
+  margin: 20px auto;
+  padding: 12px 18px;
+  width: 300px;
+  border-radius: 30px;
+  border: 1px solid #ddd;
+  outline: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0,123,255,0.3);
+}
+
+/* Movie container */
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+/* Movie card */
+.card {
+  background: #fff;
+  padding: 12px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* Hover effect */
+.card:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Image */
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Title */
+.card h3 {
+  margin: 10px 0 5px;
+  font-size: 16px;
+  color: #222;
+}
+
+/* Text */
+.card p {
+  font-size: 14px;
+  color: #666;
+}
